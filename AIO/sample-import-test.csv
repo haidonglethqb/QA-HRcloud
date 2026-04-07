@@ -1,0 +1,18 @@
+Test Key,Title,Description,Preconditions,Priority,Test Steps,Data for Steps,Expected Results,Jira Story ID,Test Type,Component,Release,Test Case Status,,Creator
+TC-001,Login with valid credentials - should navigate to Home page,Verify that a user with valid credentials can log in and be redirected to the Home page successfully.,"1. Browser is open
+2. User is on Login page
+3. Valid account exists: email=test@hrcloud.com / password=Test@1234",High,"1. Navigate to the Login page
+2. Enter valid email address into the Email field
+3. Enter valid password into the Password field
+4. Click the Login button
+5. Verify the Home page is displayed",,Home page loads successfully with the user's name shown in the header,CHR-48347,,,,, QA-Team
+TC-002,Login with invalid password - should show error message,Verify that logging in with a wrong password displays an appropriate error and does not grant access.,"1. Browser is open
+2. User is on Login page",Medium,"1. Navigate to the Login page
+2. Enter valid email address into the Email field
+3. Enter an incorrect password into the Password field
+4. Click the Login button
+5. Verify the error message is displayed",,An error message appears stating invalid credentials and the user remains on the Login page,CHR-48347,,,,,QA-Team
+TC-003,Login with empty fields - should disable or block Login button,Verify that submitting the login form with empty fields is prevented.,"1. Browser is open
+2. User is on Login page",Medium,"1. Navigate to the Login page
+2. Leave Email and Password fields empty
+3. Click the Login button (or attempt to submit)",,Login button is disabled or a validation message is shown requiring both fields to be filled,CHR-48347,,,,,QA-Team
