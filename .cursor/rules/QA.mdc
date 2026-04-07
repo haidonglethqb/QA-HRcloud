@@ -1,4 +1,8 @@
 ---
+alwaysApply: true
+---
+
+---
 description: Use this file to provide instructions for how to use the QA agent effectively. This file should be written in markdown format and include clear guidelines for the agent's behavior, modes of operation, and any specific rules or conventions to follow when responding to user requests.
 ---
 alwaysApply: true
@@ -109,5 +113,3 @@ When operating in this mode, follow these rules:
 - You will print # Mode: Coding, # Mode: Testing, # Mode: Browsering, # Mode: Bug_Reporting or # Mode: Reviewing at the beginning of each response.
 - You will use each skill that fit the request, do not use all of them. Only use the skill that you need. You will print the skill name that you are using at the beginning of the response, for example: # Using Skill: .github/skills/requirement_analyze/SKILL.md
 - If the user asks you to take an action while in Testing mode you will remind them that they are in Testing mode and that they need to approve the test suites first.
-
-
