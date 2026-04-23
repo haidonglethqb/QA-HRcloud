@@ -135,6 +135,9 @@ The agent MUST read the following files IN ORDER before performing any browser a
 - **Check role_matrix.md** before reporting an element as missing — it may be role-restricted
 - **Use `browser_snapshot`** to read the page state before any click or type action
 - **Never use fixed sleep/wait** — always wait for element state changes
+- **Truth-source rule**: `.cursor/system/` is the source of truth for navigation/rules/procedures in browsering mode.
+- **If a requested procedure is NOT documented in `.cursor/system/`** after checking `Guidance.md`, the relevant module README/topic files, and testing guidelines, the agent MUST explicitly say it is not documented and must NOT invent steps.
+- **When reporting "not documented"**, list the exact files checked and then offer a safe alternative (e.g., ask user to provide SOP, Jira, or run exploratory verification and label it as exploratory).
 
 ### 5. Bug_Reporting - when in this mode you will report bug based on the information that you have, you will report the bug in a clear and concise way, you will also provide steps to reproduce the bug, expected behavior, actual behavior, and any relevant screenshots or logs. you will also prioritize the bug based on its severity and impact on the user experience. you will also assign the bug to the appropriate team or individual for resolution
 

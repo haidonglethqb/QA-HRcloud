@@ -58,3 +58,20 @@ For deeper investigations, use the read order below.
 | Roles | `04_roles_permissions/role_matrix.md` |
 | Test execution rules | `05_testing_guidelines/test_execution_rules.md` |
 | Bug verification rules | `05_testing_guidelines/bug_verification_rules.md` |
+
+## Missing Documentation Policy
+
+If a user asks for an exact UI procedure and it cannot be found in `.cursor/system/` after checking this read order:
+
+1. `Guidance.md`
+2. Relevant module `README.md` and topic files
+3. `01_navigation/url_map.md`
+4. `04_roles_permissions/role_matrix.md`
+5. Relevant file in `05_testing_guidelines/`
+
+Then the agent must:
+
+- Explicitly state: **"Not documented in system knowledge base."**
+- List the files that were checked.
+- Avoid inventing an "official" step-by-step procedure.
+- Optionally provide an **exploratory** fallback and label it clearly as exploratory.

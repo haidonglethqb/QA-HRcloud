@@ -142,6 +142,9 @@ For bug verification → .cursor/system/05_testing_guidelines/bug_verification_r
    (it may simply be hidden for that role)
 7. **RECORD all locators** used during the session for reuse in automation
 8. **DO NOT skip steps** from the test case — follow them exactly
+9. **SYSTEM-SOURCE ONLY**: Treat `.cursor/system/` as authoritative guidance.
+10. **If a requested action/procedure is not found in `.cursor/system/`**, explicitly report: "Not documented in system knowledge base" and do not fabricate exact steps.
+11. **When documentation is missing**, include the files you checked and clearly mark any fallback as exploratory (not official procedure).
 
 ---
 
