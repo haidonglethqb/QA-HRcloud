@@ -1,6 +1,6 @@
 ﻿# advanced - Articles Appendix
 
-## All Articles (16)
+## All Articles (18)
 
 | Article | URL |
 |---------|-----|
@@ -19,5 +19,7 @@
 | Smartflow Modules | https://support.hrcloud.com/en/help-center/smartflow-modules |
 | Advanced Settings in Checklists | https://support.hrcloud.com/en/help-center/advanced-settings-checklist |
 | How to add a Custom HTML widget | https://support.hrcloud.com/en/help-center/how-to-add-a-custom-html-widget |
+| How to configure Webhooks | https://support.hrcloud.com/en/help-center/how-to-configure-webhooks |
+| How to use the API Key | https://support.hrcloud.com/en/help-center/how-to-use-the-api-key |
 | How to set up an AI integration | https://support.hrcloud.com/en/help-center/how-to-set-up-an-ai-integration |
 

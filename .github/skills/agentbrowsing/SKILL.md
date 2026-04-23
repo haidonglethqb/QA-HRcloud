@@ -45,7 +45,7 @@ Purpose: Get reusable selectors for common UI elements
 ```
 
 ### Step 4: Read ONLY the Relevant Module Entry File(s)
-> ⚠️ **Read ONLY the module entry file(s) related to the current task. Do NOT read all 17 modules.**
+> ⚠️ **Read ONLY the module entry file(s) related to the current task. Do NOT read all 16 modules.**
 > Identify the module from the test case or bug report, read only that module README first, then follow its topic or appendix links only when needed:
 
 | If testing... | Read... |
@@ -66,6 +66,8 @@ Purpose: Get reusable selectors for common UI elements
 | Mobile app behavior | `02_modules/mobile_app/README.md` |
 | E-forms, e-signatures | `02_modules/advanced/README.md` |
 | Security, 2FA, SSO | `02_modules/security/README.md` |
+
+> Scope note: Help Center has a separate "HR Cloud API" category, but API docs are intentionally excluded from this UI browsing workflow.
 
 ### Step 5: Check Role Matrix
 ```

@@ -2,6 +2,8 @@
 
 Use this path for simple browsering, smoke checks, and bug verification where you do not need the full knowledge base.
 
+Scope note: this quickstart covers UI/browsering categories from Help Center. The separate `HR Cloud API` category is intentionally excluded.
+
 ## Minimal Read Order
 
 1. Decide the mode:

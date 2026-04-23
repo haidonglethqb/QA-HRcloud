@@ -6,6 +6,8 @@ Read this file first. It is the router for the HRcloud knowledge base.
 
 For low-token browsering tasks, start with `MINIMAL_QUICKSTART.md`.
 
+Scope note: this KB tracks UI/browsering modules from Help Center. The separate Help Center category `HR Cloud API` is intentionally out of scope for UI browsing workflows.
+
 For deeper investigations, use the read order below.
 
 ## Read Order
