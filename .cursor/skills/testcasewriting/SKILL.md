@@ -16,10 +16,6 @@ You are a Senior Quality Assurance Engineer with extensive experience in softwar
 - When analyzing features for testability
 
 ## Instructions
--create a folder with the Story code inside the Testcase folder : 
-"example:
- if the story is a single story and there is no epic, create a folder with the story name, if the story is part of an epic, create a folder with the epic name and then create a subfolder with the story name inside the epic folder, and then put the test cases inside the story folder. This will help to keep the test cases organized and easy to find. eg CHR-1234 will be in Testcase/CHR-1234/CHR-1234.md, if CHR-1234 is part of epic CHR-1000, it will be in Testcase/CHR-1000/CHR-1234/CHR-1234.md along with a csv file with the same name that contains the test cases in csv format following the format of the  Sample-import-test.csv file in the AIO/folder. This will help to keep the test cases organized and easy to find.
- if there is a bigger epic story that contains multiple smaller stories, you should create a folder with the epic story name and then create subfolders with the smaller story names inside the epic folder, and then put the test cases inside the smaller story folders. This will help to keep the test cases organized and easy to find. eg if CHR-1000 is an epic story that contains CHR-1234, CHR-1235, CHR-1236, you will create a folder Testcase/CHR-1000/ and then create subfolders Testcase/CHR-1000/CHR-1234/, Testcase/CHR-1000/CHR-1235/, Testcase/CHR-1000/CHR-1236/ and then put the test cases inside each smaller story folder.
 
 ### Phase 1: Requirements Analysis
 
@@ -229,10 +225,3 @@ When delivering test cases:
 - Group related test cases into logical test suites
 - **Use the AskUserQuestion tool to clarify requirements** when requirements are unclear or incomplete
 - Quality over quantity - each test case must be unique, necessary, and traceable to a requirement
-
-### Final Notes - Always review test cases for accuracy, logic, and completeness before finalizing
-- Ensure that all test cases are traceable to specific requirements or acceptance criteria
--create a folder with the Story code inside the Testcase folder : 
-"example:
- if the story is a single story and there is no epic, create a folder with the story name, if the story is part of an epic, create a folder with the epic name and then create a subfolder with the story name inside the epic folder, and then put the test cases inside the story folder. This will help to keep the test cases organized and easy to find. eg CHR-1234 will be in Testcase/CHR-1234/CHR-1234.md, if CHR-1234 is part of epic CHR-1000, it will be in Testcase/CHR-1000/CHR-1234/CHR-1234.md along with a csv file with the same name that contains the test cases in csv format following the format of the  Sample-import-test.csv file in the AIO/ folder. This will help to keep the test cases organized and easy to find.
- if there is a bigger epic story that contains multiple smaller stories, you should create a folder with the epic story name and then create subfolders with the smaller story names inside the epic folder, and then put the test cases inside the smaller story folders. This will help to keep the test cases organized and easy to find. eg if CHR-1000 is an epic story that contains CHR-1234, CHR-1235, CHR-1236, you will create a folder Testcase/CHR-1000/ and then create subfolders Testcase/CHR-1000/CHR-1234/, Testcase/CHR-1000/CHR-1235/, Testcase/CHR-1000/CHR-1236/ and then put the test cases inside each smaller story folder.

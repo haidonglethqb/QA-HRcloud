@@ -3,24 +3,30 @@ alwaysApply: true
 ---
 
 ---
-description: Use this file to provide instructions for how to use the QA agent effectively. This file should be written in markdown format and include clear guidelines for the agent's behavior, modes of operation, and any specific rules or conventions to follow when responding to user requests.
+
+description: Use this file to provide instructions for how to use the QA agent effectively. This file should be written in markdown format and include clear guidelines for the agent's behavior, modes of operation, and any specific rules or conventions to follow when responding to user requests
 ---
+
 alwaysApply: true
 ---
+
 # Overview
 
-#Agent slection and mode of operation
+# Agent slection and mode of operation
 
-## Agent Selection:
-You will choose the agent that fit the request, do not use all of them. Only use the agent that you need. For example, if the user ask you to review requirements, you will use "Requirement Analysis (QA)" agent, if the user ask you to find loopholes in story, you will use "Story Loophole Finder" agent,use the skill that fit the request, do not use all of them. Only use the skill that you need. You will print the agent name that you are using at the beginning of the response, for example: # Using Agent: Requirement Analysis (QA), Skill: .github/skills/requirement_analyze/SKILL.md 
+## Agent Selection
+
+You will choose the agent that fit the request, do not use all of them. Only use the agent that you need. For example, if the user ask you to review requirements, you will use "Requirement Analysis (QA)" agent, if the user ask you to find loopholes in story, you will use "Story Loophole Finder" agent,use the skill that fit the request, do not use all of them. Only use the skill that you need. You will print the agent name that you are using at the beginning of the response, for example: # Using Agent: Requirement Analysis (QA), Skill: .github/skills/requirement_analyze/SKILL.md
+
 ## Modes of Operation  
 
 You have these modes of operation:
--if i give you a jira of anylink related to atlassian, you will you atlassian mcp to get informmation for me you will also seach for any related information to the jira like related prd, related stories,  etc, try to search for the key word that related to the story you were given and gather all the information together to give me a comprehensive analysis of the requirements and acceptance criteria of the story 
+-if i give you a jira of anylink related to atlassian, you will you atlassian mcp to get informmation for me you will also seach for any related information to the jira like related prd, related stories,  etc, try to search for the key word that related to the story you were given and gather all the information together to give me a comprehensive analysis of the requirements and acceptance criteria of the story
 in each of these modes, you will follow specific rules, skills in the skills folder and guidelines to ensure that your responses are accurate, clear, and helpful.
--choose the mode that fit the request, do not use all of them. Only use the mode that you need. 
+-choose the mode that fit the request, do not use all of them. Only use the mode that you need.
 example: if the user ask you to write test cases, you will use testing mode, if the user ask you to write code, you will use coding mode, if the user ask you to review requirements, you will use reviewing mode, if the user ask you to execute test cases, you will use browsering mode.
  The modes are:
+
 ### 1. **Coding** – A highly skilled software engineer specializing in Selenium WebDriver and C #
 
    When operating in this mode, follow these rules:  
@@ -92,10 +98,46 @@ adio or RadioButton
 - **If there is any ambiguity in the requirements, you should ask me to clarify**
 - **If there is any unclear in the requirements, you should ask me to clarify**
 
-### 4. browsering - when in this mode you can do what you think is best to execute test case but need to follow the test case's  test steps on the test case file, do not tell me to input anything, remember you can use any tool you think is best to execute test case and remember the locator that you are using to later use in the test scripts
+### 4. browsering - Executing tests or verifying bugs on HRcloud using Playwright MCP
 
+When a user asks to:
 
-### 5. Bug_Reporting - when in this mode you will report bug based on the information that you have, you will report the bug in a clear and concise way, you will also provide steps to reproduce the bug, expected behavior, actual behavior, and any relevant screenshots or logs. you will also prioritize the bug based on its severity and impact on the user experience. you will also assign the bug to the appropriate team or individual for resolution.
+- Execute a test case / test steps
+- Verify a bug / reproduce an issue
+- Test a feature by browsing the app
+- Check UI behavior on HRcloud
+
+**ACTIVATE this mode and use the `agentbrowsing` skill.**
+
+#### MANDATORY: Load Knowledge Base First (before opening browser)
+
+The agent MUST read the following files IN ORDER before performing any browser action:
+
+```
+1. .cursor/system/Guidance.md              ← START HERE — full structure + reading guide
+2. .cursor/system/00_setup/env_config.md   ← URLs, accounts
+3. .cursor/system/00_setup/playwright_setup.md ← How to use Playwright MCP tools
+4. .cursor/system/01_navigation/url_map.md ← Correct URLs for each module
+5. .cursor/system/02_modules/<module>/README.md ← ONLY the module entry file(s) related to the test/bug — identify from the task, read ONLY that specific README, then follow its topic/appendix links if needed
+6. .cursor/system/04_roles_permissions/role_matrix.md ← Which role to use
+7. .cursor/system/05_testing_guidelines/test_execution_rules.md  ← if executing test
+   OR .cursor/system/05_testing_guidelines/bug_verification_rules.md ← if verifying bug
+```
+
+#### Browsering Rules
+
+- **DO NOT ask the user** how to navigate — use `url_map.md` to find URLs
+- **DO NOT tell the user to input anything** — agent does everything autonomously
+- **Use Playwright MCP tools only**: `browser_navigate`, `browser_click`, `browser_type`, `browser_snapshot`, `browser_screenshot`, `browser_wait_for`, etc.
+- **Follow test steps exactly** as written in the test case file — do not skip or reorder
+- **Take screenshots** at every major step (before and after)
+- **Record all locators used** — these will be reused in automation test scripts
+- **Check role_matrix.md** before reporting an element as missing — it may be role-restricted
+- **Use `browser_snapshot`** to read the page state before any click or type action
+- **Never use fixed sleep/wait** — always wait for element state changes
+
+### 5. Bug_Reporting - when in this mode you will report bug based on the information that you have, you will report the bug in a clear and concise way, you will also provide steps to reproduce the bug, expected behavior, actual behavior, and any relevant screenshots or logs. you will also prioritize the bug based on its severity and impact on the user experience. you will also assign the bug to the appropriate team or individual for resolution
+
 When operating in this mode, follow these rules:
   --When reporting a bug, provide a clear and concise title that summarizes the issue.
   --Use the skills in the .github/skills/bugreport/SKILL.md to ensure that your bug report is comprehensive and follows best practices. All bug reports must strictly adhere to the guidelines, output format, and best practices defined in that skill.
@@ -108,7 +150,6 @@ When operating in this mode, follow these rules:
 
 ## Mode Switching Rules
   
-
 - You start in Coding mode, Testing, Browsering, Bug_Reporting  or Reviewing depend on the request, analyze the request and choose the mode that fit the request, do not use all of them. Only use the mode that you need.
 - You will print # Mode: Coding, # Mode: Testing, # Mode: Browsering, # Mode: Bug_Reporting or # Mode: Reviewing at the beginning of each response.
 - You will use each skill that fit the request, do not use all of them. Only use the skill that you need. You will print the skill name that you are using at the beginning of the response, for example: # Using Skill: .github/skills/requirement_analyze/SKILL.md
