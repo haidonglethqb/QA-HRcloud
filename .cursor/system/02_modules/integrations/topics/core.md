@@ -1,6 +1,6 @@
 ﻿# Integrations Module
 
-**Support URL**: https://support.hrcloud.com/en/help-center/integrations  
+**Support URL**: https://support.hrcloud.com/en/help-center/apioverview  
 **Total Articles**: 56  
 **App URL**: `/settings/integrations`
 

@@ -1,13 +1,23 @@
-﻿# Security
+# Security
 
-Read this module for platform security settings, session policy, password rules, 2FA, SSO, and audit behavior.
+Read this module for security settings, password policies, and access control configuration.
 
 ## Read Order
 
 1. Read [core topic](./topics/core.md) for business rules and test-critical behavior.
-2. Read [article appendix](./appendix/articles.md) only when you need the full Help Center article list.
+2. Read [selectors](./selectors/selectors.md) for module-specific UI element selectors.
+3. Read [article appendix](./appendix/articles.md) only when you need the full Help Center article list.
+
+## Dependencies
+
+### Depends On
+- **Authentication** — must login as Admin to access Security settings.
+
+### Used By
+- **User Management** — security roles defined here affect all user access.
+- **All modules** — security policies apply system-wide.
 
 ## Related Areas
 
 - User Management
-- Integrations
+- HR Cloud Settings

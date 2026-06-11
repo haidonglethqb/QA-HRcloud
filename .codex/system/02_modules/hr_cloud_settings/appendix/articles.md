@@ -9,21 +9,21 @@
 | How to change your Company's Colors | https://support.hrcloud.com/en/help-center/how-to-change-colors-across-the-platform |
 | How to change Company's Date format | https://support.hrcloud.com/en/help-center/how-to-change-companys-date-format |
 | How to change Company time zone | https://support.hrcloud.com/en/help-center/how-to-change-company-timezone |
-| How to add Positions | https://support.hrcloud.com/en/help-center/how-to-add-positions |
-| How to add Departments | https://support.hrcloud.com/en/help-center/how-to-add-departments |
-| How to add Divisions | https://support.hrcloud.com/en/help-center/how-to-add-divisions |
-| How to add Locations | https://support.hrcloud.com/en/help-center/how-to-add-a-location |
-| How to edit or delete Positions, Departments, Divisions, Locations | https://support.hrcloud.com/en/help-center/how-to-edit-or-delete-positions-departments-divisions-or-locations |
+| How to add Positions | https://support.hrcloud.com/en/help-center/position |
+| How to add Departments | https://support.hrcloud.com/en/help-center/department |
+| How to add Divisions | https://support.hrcloud.com/en/help-center/division |
+| How to add Locations | https://support.hrcloud.com/en/help-center/location |
+| How to edit or delete Positions, Departments, Divisions, Locations | https://support.hrcloud.com/en/help-center/how-to-edit-positions-locations-departments-divisions-and-employment-types |
 | How to add Employment Types | https://support.hrcloud.com/en/help-center/how-to-add-employment-types |
 | How to edit or delete Employment Types | https://support.hrcloud.com/en/help-center/how-to-edit-or-delete-employment-types |
 | How to set up Employment Statuses | https://support.hrcloud.com/en/help-center/how-to-set-up-employment-statuses |
-| How to set up Working Time Policy | https://support.hrcloud.com/en/help-center/how-to-set-up-working-time-policy |
-| How to add Holidays to the Calendar | https://support.hrcloud.com/en/help-center/how-to-add-holidays-to-the-calendar |
-| How to Set Up Email Alerts | https://support.hrcloud.com/en/help-center/how-to-set-up-the-email-alerts |
+| How to set up Working Time Policy | https://support.hrcloud.com/en/help-center/how-to-adjust-your-standard-working-days/hours |
+| How to add Holidays to the Calendar | https://support.hrcloud.com/en/help-center/how-to-add-a-company-holiday |
+| How to Set Up Email Alerts | https://support.hrcloud.com/en/help-center/how-to-set-up-email-alerts-for-new-applicants-and-applicants-status-changes |
 | How to import employees | https://support.hrcloud.com/en/help-center/how-to-import-employees |
 | How to add Custom Fields | https://support.hrcloud.com/en/help-center/how-to-add-custom-fields |
 | How to use the Employee Lookup Field | https://support.hrcloud.com/en/help-center/how-to-use-the-employee-lookup-field |
-| How to add a Form/Document template | https://support.hrcloud.com/en/help-center/how-to-add-a-form |
+| How to add a Form/Document template | https://support.hrcloud.com/en/help-center/how-to-add-a-document |
 | How to add fillable fields to a Form | https://support.hrcloud.com/en/help-center/how-to-add-fillable-fields-to-a-form |
 | How to add Signature fields to a Form | https://support.hrcloud.com/en/help-center/how-to-add-signature-fields-to-a-form |
 | How to add a Merge field to a Form | https://support.hrcloud.com/en/help-center/how-to-add-a-merge-field-to-a-form |

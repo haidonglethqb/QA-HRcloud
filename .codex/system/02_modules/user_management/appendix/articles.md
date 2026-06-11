@@ -10,7 +10,7 @@
 | How to delete a user | https://support.hrcloud.com/en/help-center/how-to-delete-a-user |
 | How to create a custom role | https://support.hrcloud.com/en/help-center/how-to-create-a-new-role |
 | How to configure permissions for a custom role | https://support.hrcloud.com/en/help-center/how-to-configure-permissions-for-a-custom-role |
-| How to create an Employee Group | https://support.hrcloud.com/en/help-center/how-to-create-an-employee-group |
+| How to create an Employee Group | https://support.hrcloud.com/en/help-center/how-to-create-employee-groups |
 | How to set up SSO | https://support.hrcloud.com/en/help-center/how-to-set-up-sso |
 | How to enable 2FA | https://support.hrcloud.com/en/help-center/how-to-enable-2fa |
 | How to manage password policy | https://support.hrcloud.com/en/help-center/how-to-manage-password-policy |

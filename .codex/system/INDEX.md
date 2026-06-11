@@ -1,4 +1,4 @@
-﻿# INDEX â€” HRcloud System Knowledge Base
+# INDEX â€” HRcloud System Knowledge Base
 
 Concise map of all files in the `.codex/system/` directory.
 
@@ -48,10 +48,15 @@ Concise map of all files in the `.codex/system/` directory.
 â”œâ”€â”€ 04_roles_permissions/
 â”‚   â”œâ”€â”€ README.md
 â”‚   â””â”€â”€ role_matrix.md
-â””â”€â”€ 05_testing_guidelines/
+â”œâ”€â”€ 05_testing_guidelines/
+â”‚   â”œâ”€â”€ README.md
+â”‚   â”œâ”€â”€ bug_verification_rules.md
+â”‚   â””â”€â”€ test_execution_rules.md
+â””â”€â”€ 06_test_data/
     â”œâ”€â”€ README.md
-    â”œâ”€â”€ bug_verification_rules.md
-    â””â”€â”€ test_execution_rules.md
+    â”œâ”€â”€ test_accounts.md
+    â”œâ”€â”€ data_generators.md
+    â””â”€â”€ naming_conventions.md
 ```
 
 ## Module Folder Pattern
@@ -60,11 +65,13 @@ Every folder in `02_modules/` follows the same shape:
 
 ```text
 02_modules/<module>/
-â”œâ”€â”€ README.md
-â”œâ”€â”€ topics/
-â”‚   â””â”€â”€ core.md
-â””â”€â”€ appendix/
-    â””â”€â”€ articles.md
+├── README.md
+├── selectors/
+│   └── selectors.md
+├── topics/
+│   └── core.md
+└── appendix/
+    └── articles.md
 ```
 
 Use `README.md` as the module entry point. Read `topics/core.md` for business rules and test-critical behavior. Read `appendix/articles.md` only when you need the full Help Center article list.
@@ -85,7 +92,7 @@ Use `README.md` as the module entry point. Read `topics/core.md` for business ru
 | Shift Planner | `02_modules/shift_planner/README.md` | 3 | https://support.hrcloud.com/en/help-center/shift-planner |
 | User Management | `02_modules/user_management/README.md` | 13 | https://support.hrcloud.com/en/help-center/user-management |
 | HR Cloud Settings | `02_modules/hr_cloud_settings/README.md` | 35 | https://support.hrcloud.com/en/help-center/hr-cloud-settings |
-| Integrations | `02_modules/integrations/README.md` | 56 | https://support.hrcloud.com/en/help-center/integrations |
+| Integrations | `02_modules/integrations/README.md` | 56 | https://support.hrcloud.com/en/help-center/apioverview |
 | Mobile App | `02_modules/mobile_app/README.md` | 4 | https://support.hrcloud.com/en/help-center/mobile-app |
 | Advanced | `02_modules/advanced/README.md` | 18 | https://support.hrcloud.com/en/help-center/advanced |
 | Security | `02_modules/security/README.md` | 1 | https://support.hrcloud.com/en/help-center/security |

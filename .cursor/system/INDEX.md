@@ -85,7 +85,7 @@ Use `README.md` as the module entry point. Read `topics/core.md` for business ru
 | Shift Planner | `02_modules/shift_planner/README.md` | 3 | https://support.hrcloud.com/en/help-center/shift-planner |
 | User Management | `02_modules/user_management/README.md` | 13 | https://support.hrcloud.com/en/help-center/user-management |
 | HR Cloud Settings | `02_modules/hr_cloud_settings/README.md` | 35 | https://support.hrcloud.com/en/help-center/hr-cloud-settings |
-| Integrations | `02_modules/integrations/README.md` | 56 | https://support.hrcloud.com/en/help-center/integrations |
+| Integrations | `02_modules/integrations/README.md` | 56 | https://support.hrcloud.com/en/help-center/apioverview |
 | Mobile App | `02_modules/mobile_app/README.md` | 4 | https://support.hrcloud.com/en/help-center/mobile-app |
 | Advanced | `02_modules/advanced/README.md` | 18 | https://support.hrcloud.com/en/help-center/advanced |
 | Security | `02_modules/security/README.md` | 1 | https://support.hrcloud.com/en/help-center/security |

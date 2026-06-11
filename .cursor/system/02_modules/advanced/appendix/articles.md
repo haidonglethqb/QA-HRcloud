@@ -4,7 +4,7 @@
 
 | Article | URL |
 |---------|-----|
-| How to add a Form/Document template | https://support.hrcloud.com/en/help-center/how-to-add-a-form |
+| How to add a Form/Document template | https://support.hrcloud.com/en/help-center/how-to-add-a-document |
 | How to add fillable fields to a Form | https://support.hrcloud.com/en/help-center/how-to-add-fillable-fields-to-a-form |
 | How to add Signature fields to a Form | https://support.hrcloud.com/en/help-center/how-to-add-signature-fields-to-a-form |
 | How to add a Merge field to a Form | https://support.hrcloud.com/en/help-center/how-to-add-a-merge-field-to-a-form |
